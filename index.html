@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tampilkan IP Address</title>
+    <script type="text/javascript">
+        function displayIP(json) {
+            var ipAddress = json.ip;
+            document.getElementById("ipAddress").innerHTML = "Alamat IP Anda: " + ipAddress;
+        }
+    </script>
+    <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=displayIP"></script>
+</head>
+<body>
+    <h1>Tampilkan IP Address</h1>
+    <p id="ipAddress">Memuat...</p>
+</body>
+</html>
